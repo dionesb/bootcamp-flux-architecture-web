@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 /* Importação do Provider do react-redux para deixa-lo disponível para toda a aplicação. */
 import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
 
 import './config/reactotronConfig';
 
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Routes />
         <GlobalStyle />
+        <ToastContainer autoClose={3000} />
       </BrowserRouter>
     </Provider>
   );
